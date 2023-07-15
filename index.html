@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhiteBoard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    
+        <div class="controls">
+            <div class="size">
+                <div class="sizeCenter">
+                    <button id="increase">+1</button>
+                    <span id="size">10</span>
+                    <button id="decrease">-1</button>
+                </div>
+            </div>
+            <div class="sizeby5">Size Change By 05
+                <button id="increseby5">+5</button>
+                <button id="decreaseby5">-5</button>
+            </div>
+            <div class="sizeby10">Size Change By 10
+                <button id="increseby10">+10</button>
+                <button id="decreaseby10">-10</button>
+            </div>
+            <div class="sizeby50">Size Change By 50
+                <button id="increseby50">+50</button>
+                <button id="decreaseby50">-50</button>
+            </div>
+            <div class="pencilEraiser">
+                <div class="sizeCenter">
+                <button id="eraser" ><span >Pencil/Earaser</span></button>
+                
+                </div>
+            </div>
+            <div class="clearall">
+                <button id="clearall" >Clear All </button>
+            </div>
+            <div class="color">
+                <div class="sizeCenter">
+                    <input type="color" id="color" value="#000000">
+                </div>
+            </div>
+            <div class="rectangle">Draw Rectangle
+                <input type="number" id="rectWidth" min="1"  value="10">
+                <input type="number" id="rectHeight" min="1" value="10">
+                <button id="rectangle"><span class="material-symbols-outlined">
+                    rectangle
+                    </span></button>
+                    
+            </div>
+            <div class="circle">Draw Circle With Radius
+                <input type="number" id="radius" min="1"  value="10">
+                <button id="circle"><span class="material-symbols-outlined">
+                    circle
+                    </span></button>
+            </div>
+        </div>
+        <div class="board">
+            <canvas class="myCanvas" width="1350" height="700" id="myCanvas"></canvas>
+        </div>
+    
+</body>
+</html>
